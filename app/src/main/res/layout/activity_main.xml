@@ -47,16 +47,36 @@
         android:layout_height="match_parent">
 
         <Button
+            android:layout_marginLeft="20dp"
+            android:layout_centerHorizontal="false"
             android:id="@+id/btn_valider"
             android:text="Valider"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
 
         <TextView
+            android:id="@+id/test_hello"
+            android:layout_alignLeft="@id/btn_valider"
             android:layout_below="@id/btn_valider"
             android:text="Hello from relative layout"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"/>
+
+        <GridLayout
+            android:rowCount="2"
+            android:columnCount="3"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="10dp"
+            android:layout_below="@id/test_hello"
+            android:layout_width="300dp"
+            android:layout_height="300dp">
+
+            <Button android:text="Btn1"/>
+            <Button android:text="Btn2"/>
+            <Button android:text="Btn3"/>
+            <Button android:text="Btn4"/>
+
+        </GridLayout>
 
 
     </RelativeLayout>
