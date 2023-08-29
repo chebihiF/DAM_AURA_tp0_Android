@@ -6,7 +6,7 @@
 
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:orientation="horizontal"
+    android:orientation="vertical"
     android:padding="30dp"
     tools:context=".MainActivity">
 
@@ -40,5 +40,27 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
+
+    <RelativeLayout
+        android:layout_marginTop="50dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <Button
+            android:id="@+id/btn_valider"
+            android:text="Valider"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+        <TextView
+            android:layout_below="@id/btn_valider"
+            android:text="Hello from relative layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"/>
+
+
+    </RelativeLayout>
+
+
 
 </LinearLayout>
