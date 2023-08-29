@@ -12,7 +12,7 @@
 
     <TextView
         android:textSize="30sp"
-        android:textColor="#EDBF32"
+        android:textColor="@color/myPrimaryColor"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Hello World!"
@@ -55,6 +55,7 @@
             android:layout_height="wrap_content"/>
 
         <TextView
+            android:textColor="@color/myPrimaryColor"
             android:id="@+id/test_hello"
             android:layout_alignLeft="@id/btn_valider"
             android:layout_below="@id/btn_valider"
@@ -64,17 +65,17 @@
 
         <GridLayout
             android:rowCount="2"
-            android:columnCount="3"
+            android:columnCount="2"
             android:layout_centerHorizontal="true"
             android:layout_marginTop="10dp"
             android:layout_below="@id/test_hello"
             android:layout_width="300dp"
             android:layout_height="300dp">
 
-            <Button android:text="Btn1"/>
-            <Button android:text="Btn2"/>
-            <Button android:text="Btn3"/>
-            <Button android:text="Btn4"/>
+            <Button android:text="Btn1" android:textColor="@color/myTrinaryColor" android:layout_margin="10dp"/>
+            <Button android:text="Btn2" android:layout_margin="10dp"/>
+            <Button android:text="Btn3" android:layout_margin="10dp"/>
+            <Button android:text="Btn4" android:layout_margin="10dp"/>
 
         </GridLayout>
 
