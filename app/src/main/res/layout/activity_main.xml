@@ -75,8 +75,8 @@
             android:layout_width="300dp"
             android:layout_height="300dp">
 
-            <Button android:text="Btn1" android:textColor="@color/myTrinaryColor" android:layout_margin="10dp"/>
-            <Button android:text="Btn2" android:layout_margin="10dp"/>
+            <Button android:id="@+id/btn1" android:text="Btn1" android:textColor="@color/myTrinaryColor" android:layout_margin="10dp"/>
+            <Button android:id="@+id/btn2" android:text="Btn2" android:layout_margin="10dp"/>
             <Button android:text="Btn3" android:layout_margin="10dp"/>
             <Button android:text="Btn4" android:layout_margin="10dp"/>
 
