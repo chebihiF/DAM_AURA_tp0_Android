@@ -53,7 +53,9 @@
             android:id="@+id/btn_valider"
             android:text="Valider"
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"/>
+            android:layout_height="wrap_content"
+            android:onClick="test"
+            />
 
         <TextView
             android:textColor="@color/myPrimaryColor"
