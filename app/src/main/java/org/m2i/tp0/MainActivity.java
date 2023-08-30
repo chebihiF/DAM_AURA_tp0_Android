@@ -26,7 +26,27 @@ public class MainActivity extends AppCompatActivity {
 
         // 3 - manipuler (UI)
         t_hello.setText("Hello from java file");
+
+        btn_valider.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Toast.makeText(getApplicationContext(),
+                        "Hello from Valider",Toast.LENGTH_LONG).show();
+            }
+        });
+
+        btn_valider.setOnLongClickListener(new View.OnLongClickListener() {
+            @Override
+            public boolean onLongClick(View v) {
+                Toast.makeText(getApplicationContext(),
+                        "Long click on Valider",Toast.LENGTH_LONG).show();
+                return true;
+            }
+        });
+
     }
+
+
 
     public void test(View view) {
         Toast.makeText(this,"Hello from Valider",Toast.LENGTH_LONG).show();
